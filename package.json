@@ -1,0 +1,22 @@
+{
+  "name": "mchack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rishabh-malik/Microsoft-Hackathon-Galgotia.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rishabh-malik/Microsoft-Hackathon-Galgotia/issues"
+  },
+  "homepage": "https://github.com/rishabh-malik/Microsoft-Hackathon-Galgotia#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}

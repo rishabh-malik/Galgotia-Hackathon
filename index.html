@@ -1,0 +1,221 @@
+	<!doctype html>
+	<html lang="en">
+	<head>
+
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+		<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500" rel="stylesheet">
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
+
+		<title>DeliveryMan</title>
+
+		<style type="text/css">
+		::-webkit-scrollbar {
+			width: 0px;
+			background: transparent
+		}
+	</style>
+</head>
+<body style="background: #13171B; margin: 0; font-family: 'Raleway">
+
+	<div class="container-fluid">
+
+		<!-- TOP NAV BEGINS-->
+		<div class="row" style="height: 5vh; line-height: 5vh; font-size: 3vh">
+			<div style="color: #9C9C9C">TEAM</div><div style="color: #195577">ETHEREUM</div>	
+			<div style="color: #195577; font-size: 2vh; margin-left: 1vw"> BHARATI  VIDYAPEETH  COLLEGE  OF  ENGINEERING </div>
+			<div style="color: #9C9C9C; font-size: 2vh; margin-left: 46vw">ACCOUNT</div><div style="color: #34AAEF; font-size: 2vh; font-weight: 500; margin-left: 1vw">LOGOUT</div>		
+		</div>
+		<!-- TOP NAV ENDS-->
+
+		<!-- LATEST ORDER BEGINS-->
+		<div class="row" style="background: #091D2A; height: 7vh; line-height: 7vh; font-size: 5vh;"">
+			<div style="color: #34AAEF;">SMART</div><div style="color: #195577; margin-right: 2vw;">DELIVERS</div>
+			<div style="color: #9C9C9C;font-size: 3vh;">UDIT-</div><div style="color: #9C9C9C; margin-right: 2vw;font-size: 3vh;">KUMAR</div>
+			<div style="color: #195577;font-size: 3vh; margin-left: 24vw">LEVEL</div><div style="color: #F64134; margin-right: 2vw;font-size: 3vh;">3</div>
+			<div style="color: #F64134;font-size: 3vh;">1234</div><div style="color: #195577; margin-right: 2vw;font-size: 3vh;">/1500XP TO LEVEL UP</div>
+
+			<div style="color: #34AAEF; font-size: 2vh;">Add Product</div>
+		</div>
+		<!-- LATEST ORDER ENDS-->
+
+		<!-- BIG CONTENT -->
+		<div class="row">
+
+			<!-- ALL ORDERS -->
+			<div class="col-3" style="height: 88vh; border: solid 3px #091D2A; padding: 0; border-top: none;">
+				<div class="all" style="border-bottom: solid 3px #091D2A">
+					<div class="alltitile text-center my-auto" style="height: 5vh; background: #091D2A; color: #195577;  line-height: 5vh; font-weight: 500">
+						YOUR ORDERS
+					</div>
+				</div>
+				<div style="height: 82.5vh; overflow-y: scroll;">				
+					<div class="allorders" style="font-size: 1.5vh; padding: 5%; border-bottom: solid 2px #091D2A;">
+						<div class="row" style="color: #2882B7;">
+							<div class="col">PRODUCT</div>
+							<div class="col">YOUR BID</div>					
+							<div class="col">PICKUP</div>					
+							<div class="col">DROP</div>										
+						</div>
+						<div class="row">
+							<div class="col" style="color: #1F732D">23124574</div>
+							<div class="col" style="color: #F64134">RS1200</div>					
+							<div class="col" style="color: #195577; font-weight: 500">DELHI-6</div>					
+							<div class="col" style="color: #195577; font-weight: 500">DELHI-10</div>										
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- ALL ORDER ENDS -->
+
+
+
+
+
+			<!-- UNDECIDED -->
+			<div class="col-6" style="height: 88vh; border: solid 3px #091D2A; border-top: none; padding: 0">
+				<div class="all" style="border-bottom: solid 3px #091D2A">
+					<div class="alltitle text-center my-auto" style="height: 5vh; background: #091D2A; color: #195577;  line-height: 5vh; font-weight: 500">
+						ANALYTICS
+					</div>
+					<canvas id="myChart"></canvas>
+					<div style="background: #091D2A; height: 5vh;margin-top: 0.7vh;line-height: 5vh;font-size: 2vh;color: #195577" class="text-center">CONTROL PANEL</div>
+					<div>
+						<input type="text" name="input" style="font-size: 1.5vh;background: #123F5D; border: none; width: 79%;height: 5vh;color: #34AAEF; padding: 0 5%" placeholder="ENTER BID AMOUNT">
+						<button class="btn btn-danger" style="font-size: 1.5vh;border-radius: 0; width: 20%;height: 5vh;outline: none;">BID</button>
+					</div>
+					<div class="row" style="width: 100%; margin: auto;">
+						<div class="col-6">
+							<canvas id="myChart"></canvas>
+						</div>
+						<div class="col-6">B</div>
+					</div>
+				</div>
+			</div>
+			<!-- UNDECIDED -->
+
+
+
+
+
+			<!-- LIVE ORDERS BEGINS-->
+			<div class="col-3" style="height: 88vh; border: solid 3px #091D2A; padding: 0; border-top: none">
+
+				<div class="currentbid" style="height: 50vh; border-bottom: solid 3px #091D2A">
+					<div class="currentbidtitile text-center my-auto" style="height: 5vh; background: #091D2A; color: #195577;  line-height: 5vh; font-weight: 500">
+						LIVE BIDS
+					</div>
+					<div style="height: 46vh; overflow-y: scroll;">
+						<div class="livebids" style="font-size: 1.5vh; padding: 5%; border-bottom: solid 2px #091D2A;">
+							<div class="row" style="color: #2882B7;">
+								<div class="col">CLASS</div>					
+								<div class="col">PICKUP</div>
+								<div class="col">DROP</div>																				
+								<div class="col">BID</div>					
+							</div>
+							<div class="row">
+								<div class="col" style="color: #F64134">A</div>					
+								<div class="col" style="color: #195577; font-weight: 500">DELHI-6</div>					
+								<div class="col" style="color: #195577; font-weight: 500">DELHI-10</div>																				
+								<div class="col" style="color: #1F732D;"><button class="btn btn-danger" style="height: 2vh; font-size: 1.2vh; padding: 0 7%">PLACE BID</button></div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+
+				<div class="past" style="height: 37vh;">
+					<div class="pastbidtitile text-center my-auto" style="height: 5vh; background: #091D2A; color: #195577;  line-height: 5vh; font-weight: 500">
+						PREVIOUS BIDS
+					</div>
+					<div style="height: 32vh; overflow-y: scroll;">
+						<div class="prevbids" style="font-size: 1.5vh; padding: 5%; border-bottom: solid 2px #091D2A;">
+							<div class="row" style="color: #2882B7;">
+								<div class="col-3">BID</div>					
+								<div class="col-3">CLASS</div>					
+								<div class="col-6">PERSON</div>																			
+							</div>
+							<div class="row text-left">
+								<div class="col-3" style="color: #1F732D;">RS2000</div>
+								<div class="col-3" style="color: #F64134">A</div>					
+								<div class="col-6" style="color: #195577; font-weight: 500">0x123531451236123413</div>												
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- LIVE ORDER ENDS -->
+
+		</div>
+		<!-- BIG CONTENT ENDS-->
+
+		<script type="text/javascript">
+			var ctx = document.getElementById('myChart').getContext('2d');
+			var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'line',
+
+    // The data for our dataset
+    data: {
+    	labels: ["January", "February", "March", "April", "May", "June", "July"],
+    	datasets: [{
+    		label: "Delivery rate",
+    		backgroundColor: 'rgb(255, 99, 132)',
+    		borderColor: 'rgb(255, 99, 132)',
+    		data: [0, 10, 5, 2, 20, 30, 35],
+    	}]
+    },
+
+    // Configuration options go here
+    options: {}
+});
+
+
+
+</script>
+
+
+<script type="text/javascript">
+	function multiplyNode(node, count, deep) {
+		for (var i = 0, copy; i < count - 1; i++) {
+			copy = node.cloneNode(deep);
+			node.parentNode.insertBefore(copy, node);
+		}
+	}
+
+	multiplyNode(document.querySelector('.allorders'), 20, true);
+	multiplyNode(document.querySelector('.livebids'), 20, true);
+	multiplyNode(document.querySelector('.prevbids'), 20, true);
+
+</script>
+
+
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+<!-- COLOR PALLETTE
+
+ 	primary : #13171B
+	secondary : #091D2A
+	highlight : #34AAEF
+	text-green : #1F732D
+	text-red : #F64134
+	text-muted : #195577
+	text-primary : #2882B7 
+
+-->
